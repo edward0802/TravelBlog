@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "Home Page";
+}
+@section scripts {
+    <script src="~/lib/underscore/underscore-min.js"></script>
+    <script src="~/lib/angular/angular.min.js"></script>
+    <script src="~/lib/angular-route/angular-route.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiZGEsk7rJAwkLZx8q4y7W5yshbXOdvhY"></script>
+    <script src="~/lib/gmaps/gmaps.min.js"></script>
+    <script src="~/lib/travelMap/travelmap.min.js"></script>
+
+
+    <environment names="Development,Testing">
+        <script src="~/js/simpleControls.js"></script>
+        <script src="~/js/app-trips.js"></script>
+        <script src="~/js/tripsController.js"></script>
+        <script src="~/js/tripEditorController.js"></script>
+    </environment>
+    <!-- FOR GULPFILE.js 
+    <environment names="Production,Staging">
+        <script src="~/lib/_app/simpleControls.js"></script>
+        <script src="~/lib/_app/app-trips.js"></script>
+        <script src="~/lib/_app/tripsController.js"></script>
+        <script src="~/lib/_app/tripEditorController.js"></script>
+    </environment>
+    -->
+    <environment names="Production,Staging">
+        <script src="~/js/simpleControls.min.js"></script>
+        <script src="~/js/app-trips.min.js"></script>
+        <script src="~/js/tripsController.min.js"></script>
+        <script src="~/js/tripEditorController.min.js"></script>
+    </environment>
+
+}
+
+<div class="row" ng-app="app-trips">
+
+    @*<ng-view class="col-md-6 offset-md-3"></ng-view>*@
+    <div ng-view class="col-md-11"></div>
+
+</div>

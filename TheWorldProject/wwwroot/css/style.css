@@ -1,0 +1,92 @@
+﻿/*body
+{
+    margin: 0;
+    /*box-sizing:border-box;
+}*/
+.wrapper {
+    /*background: red;*/
+    display: flex;
+    height: 100vh;
+    /*width: 100%;*/
+    /*flex: 1;*/
+}
+.sidebar {
+    background: #7dd4d9;
+    padding: 10px;
+    /*flex-grow: 0;
+    flex-basis: 20%;*/ /* нижньою строкою замінимо ось ці дві*/
+    flex: 0 0 20%;
+    transition: margin-left ease .3s;
+}
+.very-main
+{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: auto; 
+    /*flex-basis: 70%;*/
+}
+/*.main {
+    background: #eee;
+    padding: 10px;
+    flex-grow: 1;
+}*/
+/*.footer {
+    background: #b6ff00;
+    padding: 10px;
+}*/
+
+
+
+/*p {
+    margin: 0;
+}*/
+
+
+. /*sidebar .menu li {
+    list-style-type: none;
+}
+.menu {
+    font-size: 16px;
+}
+.menu li.active {
+    font-weight: bold;
+}
+.menu li a {
+    color: #eee;
+}*/
+/*САМИЙ ТУПИ БРЕД, який я бачив, якщо я закоментую new-menu a:hover, то злітає вся верстка
+    або навіть якщо перейменую в: .nesasw-menus {} без жодних стилів, то воно злітає всерівно !!!
+*/
+.nesasw-menus бред {
+}
+
+
+
+.photo {
+    max-width: 90%;
+}
+.very-main div label {
+    display: block;
+    font-weight: bold;
+}
+
+.sidebar.hide-sidebar {
+    /*display: none;*/
+    margin-left: -20%;
+    transition: margin-left ease .3s;
+}
+
+
+.li-item:hover {
+    background: white;
+}
+
+
+
+
+/* STYLING --- MAP ---*/
+#map {
+    width: 100%;
+    height: 600px 
+}

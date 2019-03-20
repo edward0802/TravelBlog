@@ -1,0 +1,24 @@
+﻿@{ 
+    ViewBag.Title = "Confirm Email";
+    Layout = "~/Views/Shared/_LayoutClean.cshtml";
+}
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/lib/bootswatch/dist/spacelab/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h2 class="text-body">Confirm Email</h2>
+                <p>Thank you for confirming your Email <a asp-controller="Auth" asp-action="Login">Click here to Log in</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

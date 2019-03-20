@@ -1,0 +1,38 @@
+[
+  {
+    "outputFileName": "wwwroot/js/app-trips.min.js",
+    "inputFiles": [
+      "wwwroot/js/app-trips.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/script.min.js",
+    "inputFiles": [
+      "wwwroot/js/script.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/simpleControls.min.js",
+    "inputFiles": [
+      "wwwroot/js/simpleControls.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/tripEditorController.min.js",
+    "inputFiles": [
+      "wwwroot/js/tripEditorController.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/tripsController.min.js",
+    "inputFiles": [
+      "wwwroot/js/tripsController.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/css/style.min.css",
+    "inputFiles": [
+      "wwwroot/css/style.css"
+    ]
+  }
+]

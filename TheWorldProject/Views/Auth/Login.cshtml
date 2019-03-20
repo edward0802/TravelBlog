@@ -1,0 +1,32 @@
+﻿@model TheWorldProject.ViewModels.LoginViewModel
+@{
+    ViewBag.Title = "Login";
+}
+
+@section scripts {
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"></script>
+}
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h3>Login</h3>
+            <form method="post" novalidate>
+                <div asp-validation-summary="ModelOnly"></div>
+                <div class="form-group">
+                    <label asp-for="UserName"></label>
+                    <input asp-for="UserName" class="form-control" />
+                    <span asp-validation-for="UserName"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Password"></label>
+                    <input type="password" asp-for="Password" class="form-control" />
+                    <span asp-validation-for="Password"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-success" value="Log in" />
+                    <a asp-controller="Signup" asp-action="Registration" class="btn btn-sm btn-default">Create account</a>
+                    <a asp-controller="Signup" asp-action="ForgotPassword" class="btn btn-sm btn-default">Forgot Password?</a>
+                </div>
+            </form>
+        </div>
+    </div>
